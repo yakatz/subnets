@@ -36,7 +36,7 @@ function network_address_4(ip, mask) {
 }
 
 function subnet_addresses_4(mask) {
-    return 1 << (32 - mask);
+    return 2 ** (32 - mask);
 }
 
 function subnet_first_address_useable_4(addrint) {
